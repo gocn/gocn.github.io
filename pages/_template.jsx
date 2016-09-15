@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react"
 import Helmet from "react-helmet"
-import { Container } from 'react-responsive-grid'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import Headroom from 'react-headroom'
-import { config } from 'config'
-import '../css/markdown-styles'
+import { Container } from "react-responsive-grid"
+import { Link } from "react-router"
+import { prefixLink } from "gatsby-helpers"
+import Headroom from "react-headroom"
+import { config } from "config"
+import "../css/global"
+import "../css/markdown-styles"
 
 module.exports = React.createClass({
   propTypes () {
@@ -38,11 +39,11 @@ module.exports = React.createClass({
             }}
           >
             <Link
-              to={prefixLink('/')}
+              to={prefixLink("/")}
               style={{
-                color: '#1A2B34',
+                color: "#1A2B34",
                 opacity: 0.6,
-                textDecoration: 'none',
+                textDecoration: "none",
               }}
             >
               Golang Foundation

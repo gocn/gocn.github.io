@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import Helmet from "react-helmet"
 
-import { prefixLink } from 'gatsby-helpers'
+import { prefixLink } from "gatsby-helpers"
 
 const BUILD_TIME = new Date().getTime()
 
@@ -15,8 +15,8 @@ module.exports = React.createClass({
     const head = Helmet.rewind()
 
     let css
-    if (process.env.NODE_ENV === 'production') {
-      css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+    if (process.env.NODE_ENV === "production") {
+      css = <style dangerouslySetInnerHTML={{ __html: require("!raw!./public/styles.css") }} />
     }
 
     return (

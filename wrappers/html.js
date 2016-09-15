@@ -1,6 +1,6 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { config } from 'config'
+import React from "react"
+import Helmet from "react-helmet"
+import { config } from "config"
 
 module.exports = React.createClass({
   propTypes () {

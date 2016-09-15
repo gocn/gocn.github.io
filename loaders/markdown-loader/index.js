@@ -1,7 +1,7 @@
-var frontMatter = require('front-matter')
-var markdownIt = require('markdown-it')
-var hljs = require('highlight.js')
-var objectAssign = require('object-assign')
+var frontMatter = require("front-matter")
+var markdownIt = require("markdown-it")
+var hljs = require("highlight.js")
+var objectAssign = require("object-assign")
 
 var highlight = function (str, lang) {
   if ((lang !== null) && hljs.getLanguage(lang)) {
@@ -16,7 +16,7 @@ var highlight = function (str, lang) {
   } catch (_error) {
     console.error(_error)
   }
-  return ''
+  return ""
 }
 
 var md = markdownIt({
@@ -24,11 +24,11 @@ var md = markdownIt({
   linkify: true,
   highlight,
 })
-  .use(require('markdown-it-sub'))
-  .use(require('markdown-it-footnote'))
-  .use(require('markdown-it-deflist'))
-  .use(require('markdown-it-abbr'))
-  .use(require('markdown-it-attrs'))
+  .use(require("markdown-it-sub"))
+  .use(require("markdown-it-footnote"))
+  .use(require("markdown-it-deflist"))
+  .use(require("markdown-it-abbr"))
+  .use(require("markdown-it-attrs"))
 
 module.exports = function (content) {
   this.cacheable()

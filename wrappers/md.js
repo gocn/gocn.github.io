@@ -1,7 +1,7 @@
-import React from 'react'
-import 'css/markdown-styles.css'
+import React from "react"
+import "css/markdown-styles.css"
 import Helmet from "react-helmet"
-import { config } from 'config'
+import { config } from "config"
 
 module.exports = React.createClass({
   propTypes () {

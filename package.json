@@ -34,7 +34,7 @@
   "scripts": {
     "build": "gatsby build",
     "serve": "gatsby serve-build",
-    "deploy": "gatsby build --prefix-links && gh-pages -b master -d public",
+    "deploy": "gatsby build && gh-pages -b master -d public",
     "dev": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

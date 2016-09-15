@@ -1,0 +1,8 @@
+:root {
+  --base: #1A2B34;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  color: var(--base);
+}

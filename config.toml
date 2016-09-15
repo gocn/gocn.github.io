@@ -1,4 +1,4 @@
 siteTitle="Golang Foundation"
 siteDescription="Golang Foundation"
 siteKeywords="golang, go, foundation"
-linkPrefix = "/web"
+linkPrefix = "/"

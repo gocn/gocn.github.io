@@ -3,7 +3,6 @@ import Helmet from "react-helmet"
 import { Container } from "react-responsive-grid"
 import { Link } from "react-router"
 import { prefixLink } from "gatsby-helpers"
-import Headroom from "react-headroom"
 import { config } from "config"
 import "../css/global"
 import "../css/markdown-styles"
@@ -15,6 +14,9 @@ module.exports = React.createClass({
     }
   },
   render () {
+    const { location } = this.props;
+    const { pathname } = location;
+    console.log(pathname);
     return (
       <div>
         <Helmet
@@ -24,40 +26,62 @@ module.exports = React.createClass({
             {"name": "keywords", "content": config.siteKeywords},
           ]}
         />
-        <Headroom
-          wrapperStyle={{
-            fontSize: 24,
-            fontWeight: 600,
-            lineHeight: 4,
-            marginBottom: 40,
-          }}
-        >
+        <header className="app-header">
           <Container
             style={{
-              maxWidth: 1140,
-              paddingTop: 0,
+              maxWidth: 1140
             }}
           >
-            <Link
-              to={prefixLink("/")}
-              style={{
-                color: "#1A2B34",
-                opacity: 0.6,
-                textDecoration: "none",
-              }}
-            >
-              Golang Foundation
-            </Link>
+            <h1>
+              <Link to={prefixLink("/")}>Golang Foundation</Link>
+            </h1>
+            <nav>
+              <Link
+                className={(pathname === "/") ? "active" : ""}
+                to={prefixLink("/")}
+              >
+                首页
+              </Link>
+              <Link
+                className={(pathname === "/events/") ? "active" : ""}
+                to={prefixLink("/events/")}
+              >
+                活动
+              </Link>
+              <Link
+                className={(pathname === "/opensource/") ? "active" : ""}
+                to={prefixLink("/opensource/")}
+              >
+                开源项目
+              </Link>
+              <Link
+                className={(pathname === "/about/") ? "active" : ""}
+                to={prefixLink("/about/")}
+              >
+                关于
+              </Link>
+            </nav>
           </Container>
-        </Headroom>
+        </header>
+        {(pathname === "/") && (
+          <div className="home">
+            <div className="home-hero-section">
+              <p className="home-hero-section-text">Todo About Golang Foundation</p>
+            </div>
+          </div>
+        )}
         <Container
           style={{
             maxWidth: 1140,
             paddingTop: 0,
+            minHeight: "100%"
           }}
         >
           {this.props.children}
         </Container>
+        <footer className="app-footer">
+          <p>@ 2016 All Rights Reserved.</p>
+        </footer>
       </div>
     )
   },

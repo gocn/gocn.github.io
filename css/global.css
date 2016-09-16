@@ -1,3 +1,95 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "./color.css";
+
+html, body {
+  height: 100%;
+}
+
 body {
-  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Microsoft Yahei, STHeiti, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#react-mount,
+#react-mount > div {
+  height: 100%;
+}
+
+.app-header {
+  width: 100%;
+  height: 90px;
+  background-color: var(--base);
+}
+
+.app-header h1 {
+  float: left;
+  margin: 32px 0 32px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.app-header nav {
+  float: right;
+  margin: 36px 0 28px 0;
+  font-size: 18px;
+}
+
+.app-header a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.15s linear;
+}
+
+.app-header a:hover {
+  opacity: 0.7;
+}
+
+.app-header nav a {
+  margin-left: 48px;
+  padding-bottom: 4px;
+}
+
+.app-header nav a.active,
+.app-header nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+.app-footer {
+  width: 100%;
+  height: 140px;
+  background-color: var(--base);
+  display: flex;
+  align-items: center;
+}
+
+.app-footer p {
+  width: 100%;
+  color: white;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: center;
+}
+
+.home {
+  margin-top: -90px;
+}
+
+.home-hero-section {
+  width: 100%;
+  height: 600px;
+  background: url("/images/index-hero-section.png") center center;
+}
+
+.home-hero-section-text {
+  position: absolute;
+  top: 340px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.home-content {
+  height: 600px;
 }

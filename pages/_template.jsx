@@ -66,7 +66,7 @@ module.exports = React.createClass({
         {(pathname === "/") && (
           <div className="home">
             <div className="home-hero-section">
-              <p className="home-hero-section-text">Todo About Golang Foundation</p>
+              <p className="home-hero-section-text">About Golang Foundation</p>
             </div>
           </div>
         )}

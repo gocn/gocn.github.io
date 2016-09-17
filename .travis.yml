@@ -1,3 +1,10 @@
 language: node_js
 node_js:
   - "6"
+install:
+  - npm install
+script:
+  - npm run build
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "develop" && bash deploy.sh
+

@@ -1,6 +1,5 @@
 import React from "react"
 import Helmet from "react-helmet"
-import { Container } from "react-responsive-grid"
 import { Link } from "react-router"
 import { prefixLink } from "gatsby-helpers"
 import { config } from "config"
@@ -16,7 +15,7 @@ module.exports = React.createClass({
   render () {
     const { location } = this.props;
     const { pathname } = location;
-    console.log(pathname);
+
     return (
       <div>
         <Helmet
@@ -27,11 +26,7 @@ module.exports = React.createClass({
           ]}
         />
         <header className="app-header">
-          <Container
-            style={{
-              maxWidth: 1140
-            }}
-          >
+          <div className="container">
             <h1>
               <Link to={prefixLink("/")}>Golang Foundation</Link>
             </h1>
@@ -61,7 +56,7 @@ module.exports = React.createClass({
                 关于
               </Link>
             </nav>
-          </Container>
+          </div>
         </header>
         {(pathname === "/") && (
           <div className="home">
@@ -70,15 +65,9 @@ module.exports = React.createClass({
             </div>
           </div>
         )}
-        <Container
-          style={{
-            maxWidth: 1140,
-            paddingTop: 0,
-            minHeight: "100%"
-          }}
-        >
+        <div className="container">
           {this.props.children}
-        </Container>
+        </div>
         <footer className="app-footer">
           <p>@ 2016 All Rights Reserved.</p>
         </footer>

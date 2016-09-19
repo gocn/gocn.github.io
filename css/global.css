@@ -87,15 +87,36 @@ body {
   background: url("/images/index-hero-section.png") center center;
 }
 
-.home-hero-section-text {
+.home-hero-section-content {
   position: absolute;
   top: 340px;
   margin: 0 auto;
   width: 100%;
-  font-size: 32px;
   color: white;
   text-align: center;
   opacity: 0.8;
+}
+
+.home-hero-section-slogan {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.home-hero-section-text {
+  font-size: 16px;
+}
+
+.home-hero-section-text a {
+  color: white;
+  opacity: 0.5;
+  text-decoration: none;
+  line-height: 28px;
+  padding: 0 12px;
+}
+
+.home-hero-section-text a:hover {
+  opacity: 0.36;
 }
 
 .home-content {

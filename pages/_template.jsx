@@ -61,7 +61,12 @@ module.exports = React.createClass({
         {(pathname === "/") && (
           <div className="home">
             <div className="home-hero-section">
-              <p className="home-hero-section-text">About Golang Foundation</p>
+              <div className="home-hero-section-content">
+                <h2 className="home-hero-section-slogan">About Golang Foundation</h2>
+                <p className="home-hero-section-text">
+                  <Link to={prefixLink("/about/")}>了解更多 &raquo;</Link>
+                </p>
+              </div>
             </div>
           </div>
         )}

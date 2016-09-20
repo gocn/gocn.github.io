@@ -14,10 +14,42 @@ export default class Index extends React.Component {
             </p>
           </div>
         </div>
-        <div className="home-content">
-          <p>近期活动 | 开源项目 | 赞助商</p>
+        <div className="home-content home-meetups">
+          <div className="container home-meetups-container">
+            <div className="home-content-description">
+              <h3>近期活动</h3>
+              <h4>Golang Meetups</h4>
+              <p>Go 语言线下活动。</p>
+            </div>
+            <div className="home-meetups-gallery">
+              <ul>
+                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/161638")}>
+                  <p>上海</p>
+                  <time>2016-08-21</time>
+                </li>
+                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/165514")}>
+                  <p>深圳</p>
+                  <time>2016-08-28</time>
+                </li>
+                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/168370")}>
+                  <p>北京</p>
+                  <time>2016-09-24</time>
+                </li>
+                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/191766")}>
+                  <p>杭州</p>
+                  <time>2016-10-15</time>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     )
+  }
+
+  handleExternalRedirect(link) {
+    return (e) => {
+      window.open(link);
+    }
   }
 }

@@ -1,4 +1,7 @@
 :root {
   --base: #1A2B34;
+  --base-shadow: #2b3b43;
   --base-light: #768085;
+  --base-light-shadow: #414f57;
+  --grey: #AAA;
 }

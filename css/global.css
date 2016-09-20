@@ -7,6 +7,7 @@ html, body {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, Microsoft Yahei, STHeiti, Helvetica Neue, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #react-mount,
@@ -71,7 +72,7 @@ body {
 
 .app-footer p {
   width: 100%;
-  color: white;
+  color: var(--grey);
   opacity: 0.5;
   font-size: 12px;
   text-align: center;
@@ -80,8 +81,6 @@ body {
 .app-footer a {
   color: white;
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 2px solid #fff;
 }
 
 .app-footer a:hover {
@@ -132,4 +131,90 @@ body {
 
 .home-content {
   height: 600px;
+}
+
+.home-content h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-content h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.home-meetups {
+  background-color: var(--base-shadow);
+}
+
+.home-meetups h3, h4, p, li {
+  color: white;
+}
+
+.home-meetups h3 {
+  padding-top: 192px;
+  opacity: 0.7;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.home-meetups h4 {
+  opacity: 0.1;
+  font-size: 24px;
+  font-weight: 200;
+  font-variant: small-caps;
+}
+
+.home-meetups-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-content-description p {
+  margin-top: 64px;
+  font-size: 20px;
+  opacity: 0.84;
+}
+
+.home-meetups-gallery {
+  padding-top: 128px;
+}
+
+.home-meetups-gallery ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.home-meetups-gallery li {
+  position: relative;
+  width: 204px;
+  height: 336px;
+  background-color: var(--base-light-shadow);
+  margin-right: 16px;
+  border-radius: 8px;
+}
+
+.home-meetups-gallery li:hover {
+  opacity: 0.84;
+  cursor: pointer;
+}
+
+.home-meetups-gallery li:last-child {
+  margin-right: 0;
+}
+
+.home-meetups-gallery li p {
+  margin-top: 256px;
+  margin-bottom: 4px;
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0.7;
+  padding-left: 16px;
+}
+
+.home-meetups-gallery li time {
+  font-size: 12px;
+  padding-left: 16px;
 }

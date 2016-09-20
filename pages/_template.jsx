@@ -58,23 +58,9 @@ module.exports = React.createClass({
             </nav>
           </div>
         </header>
-        {(pathname === "/") && (
-          <div className="home">
-            <div className="home-hero-section">
-              <div className="home-hero-section-content">
-                <h2 className="home-hero-section-slogan">About Golang Foundation</h2>
-                <p className="home-hero-section-text">
-                  <Link to={prefixLink("/about/")}>了解更多 &raquo;</Link>
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-        <div className="container">
-          {this.props.children}
-        </div>
+        {this.props.children}
         <footer className="app-footer">
-          <p>@ 2016 All Rights Reserved.</p>
+          <p>@ 2016 Powered by <a target="_blank" href="https://github.com/gocn/gocn.github.io">GitHub Pages</a>. All Rights Reserved.</p>
         </footer>
       </div>
     )

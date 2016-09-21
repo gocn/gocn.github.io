@@ -23,19 +23,19 @@ export default class Index extends React.Component {
             </div>
             <div className="home-meetups-gallery">
               <ul>
-                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/161638")}>
+                <li className="home-meetup-shanghai" onClick={this.handleExternalRedirect("http://www.bagevent.com/event/161638")}>
                   <p>上海</p>
                   <time>2016-08-21</time>
                 </li>
-                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/165514")}>
+                <li className="home-meetup-shenzhen" onClick={this.handleExternalRedirect("http://www.bagevent.com/event/165514")}>
                   <p>深圳</p>
                   <time>2016-08-28</time>
                 </li>
-                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/168370")}>
+                <li className="home-meetup-beijing" onClick={this.handleExternalRedirect("http://www.bagevent.com/event/168370")}>
                   <p>北京</p>
                   <time>2016-09-24</time>
                 </li>
-                <li onClick={this.handleExternalRedirect("http://www.bagevent.com/event/191766")}>
+                <li className="home-meetup-hangzhou" onClick={this.handleExternalRedirect("http://www.bagevent.com/event/191766")}>
                   <p>杭州</p>
                   <time>2016-10-15</time>
                 </li>

@@ -172,8 +172,8 @@ body {
 
 .home-content-description p {
   margin-top: 64px;
-  font-size: 20px;
-  opacity: 0.84;
+  font-size: 16px;
+  opacity: 0.64;
 }
 
 .home-meetups-gallery {
@@ -193,7 +193,7 @@ body {
   height: 336px;
   margin-right: 16px;
   border-radius: 8px;
-  border: 1px solid #25353d;
+  border: 1px solid #26363f;
 }
 
 .home-meetups-gallery li:before {

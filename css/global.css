@@ -163,7 +163,7 @@ body {
 
 .home-meetups h4 {
   opacity: 0.1;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
   font-variant: small-caps;
 }
@@ -305,7 +305,7 @@ body {
 }
 
 .home-projects .home-content-description {
-  padding-right: 136px;
+  padding-right: 32px;
 }
 
 .home-projects .home-content-description p {
@@ -322,7 +322,7 @@ body {
 
 .home-projects h4 {
   opacity: 0.16;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 200;
   font-variant: small-caps;
   color: var(--base);
@@ -331,16 +331,16 @@ body {
 .home-projects ul {
   list-style-type: none;
   margin: 0;
-  width: 568px;
+  width: 860px;
   padding-top: 128px;
-  padding-left: 128px;
+  padding-left: 32px;
 }
 
 .home-projects li {
   position: relative;
   display: block;
   float: left;
-  width: 276px;
+  width: 256px;
   height: 144px;
   margin-right: 16px;
   margin-bottom: 16px;
@@ -355,7 +355,7 @@ body {
   cursor: pointer;
 }
 
-.home-projects li:nth-child(even) {
+.home-projects li:nth-child(3n+0) {
   margin-right: 0;
 }
 
@@ -363,6 +363,7 @@ body {
   margin: 0;
   padding-top: 16px;
   padding-left: 20px;
+  padding-right: 20px;
   color: var(--base);
   opacity: 0.8;
 }

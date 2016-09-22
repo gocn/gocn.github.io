@@ -53,20 +53,6 @@ export default class Index extends React.Component {
             </div>
             <div className="home-projects-list">
               <ul>
-                <li className="home-project" onClick={this.handleExternalRedirect("http://open-falcon.org/")}>
-                  <p className="home-project-title">Open-Falcon</p>
-                  <p className="home-project-description">人性化的互联网企业级监控系统.</p>
-                  <p className="home-project-meta">
-                    <span className="icon icon-star">
-                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
-                    </span>
-                    <span>623</span>
-                    <span className="icon icon-fork">
-                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
-                    </span>
-                    <span>178</span>
-                  </p>
-                </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("http://beego.me/")}>
                   <p className="home-project-title">Beego</p>
                   <p className="home-project-description">A high-performance web framework.</p>
@@ -79,6 +65,20 @@ export default class Index extends React.Component {
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
                     <span>2024</span>
+                  </p>
+                </li>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/pingcap/tidb")}>
+                  <p className="home-project-title">tidb</p>
+                  <p className="home-project-description">A distributed NewSQL database compatible with MySQL protocol.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>4713</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>597</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/flike/kingshard")}>
@@ -95,7 +95,21 @@ export default class Index extends React.Component {
                     <span>415</span>
                   </p>
                 </li>
-                <li className="home-project">
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/astaxie/bat")}>
+                  <p className="home-project-title">bat</p>
+                  <p className="home-project-description">Go implement CLI, cURL-like tool for humans.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>1371</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>127</span>
+                  </p>
+                </li>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/pingcap/tidb")}>
                   <p className="home-project-title">goim</p>
                   <p className="home-project-description">A lightweight im server.</p>
                   <p className="home-project-meta">
@@ -107,6 +121,20 @@ export default class Index extends React.Component {
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
                     <span>399</span>
+                  </p>
+                </li>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/open-falcon/of-release")}>
+                  <p className="home-project-title">Open-Falcon</p>
+                  <p className="home-project-description">人性化的互联网企业级监控系统.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>623</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>178</span>
                   </p>
                 </li>
               </ul>

@@ -32,24 +32,6 @@ module.exports = React.createClass({
             </h1>
             <nav>
               <Link
-                className={(pathname === "/") ? "active" : ""}
-                to={prefixLink("/")}
-              >
-                首页
-              </Link>
-              <Link
-                className={(pathname === "/events/") ? "active" : ""}
-                to={prefixLink("/events/")}
-              >
-                活动
-              </Link>
-              <Link
-                className={(pathname === "/opensource/") ? "active" : ""}
-                to={prefixLink("/opensource/")}
-              >
-                开源项目
-              </Link>
-              <Link
                 className={(pathname === "/about/") ? "active" : ""}
                 to={prefixLink("/about/")}
               >

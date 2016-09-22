@@ -109,7 +109,7 @@ export default class Index extends React.Component {
                     <span>127</span>
                   </p>
                 </li>
-                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/pingcap/tidb")}>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/Terry-Mao/goim")}>
                   <p className="home-project-title">goim</p>
                   <p className="home-project-description">A lightweight im server.</p>
                   <p className="home-project-meta">

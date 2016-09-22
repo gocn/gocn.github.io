@@ -1,5 +1,6 @@
 @import "../node_modules/normalize.css/normalize.css";
 @import "./color.css";
+@import "./icon.css";
 
 html, body {
   height: 100%;
@@ -146,7 +147,7 @@ body {
 }
 
 .home-meetups {
-  background-color: var(--base-shadow);
+  background-color: #2f3f47;
 }
 
 .home-meetups h3, h4, p, li {
@@ -154,7 +155,7 @@ body {
 }
 
 .home-meetups h3 {
-  padding-top: 192px;
+  padding-top: 204px;
   opacity: 0.7;
   font-size: 40px;
   font-weight: 200;
@@ -178,8 +179,12 @@ body {
   opacity: 0.64;
 }
 
+.home-meetups .home-content-description {
+  padding-left: 32px;
+}
+
 .home-meetups-gallery {
-  padding-top: 128px;
+  padding-top: 160px;
 }
 
 .home-meetups-gallery ul {
@@ -187,15 +192,17 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
+  padding-right: 32px;
 }
 
 .home-meetups-gallery li {
   position: relative;
-  width: 204px;
-  height: 336px;
+  width: 188px;
+  height: 276px;
   margin-right: 16px;
   border-radius: 8px;
-  border: 1px solid #26363f;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  /*border: 1px solid #26363f;*/
 }
 
 .home-meetups-gallery li:before {
@@ -206,7 +213,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.12;
+  opacity: 0.28;
   border-radius: 8px;
   z-index: 40;
   transition: opacity 0.2s linear;
@@ -243,7 +250,7 @@ body {
 }
 
 .home-meetups-gallery li:hover:before {
-  opacity: 0.2;
+  opacity: 0.36;
 }
 
 .home-meetups-gallery li:last-child {
@@ -269,7 +276,7 @@ body {
 
 .home-meetups-gallery li p {
   position: absolute;
-  top: 256px;
+  top: 208px;
   font-size: 24px;
   font-weight: 600;
   opacity: 0.7;
@@ -280,9 +287,123 @@ body {
 
 .home-meetups-gallery li time {
   position: absolute;
-  top: 288px;
+  top: 240px;
   z-index: 60;
   font-size: 12px;
   padding-left: 16px;
   opacity: 0.5;
+}
+
+.home-projects {
+  background-color: #d8dadc;
+}
+
+.home-projects-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.home-projects .home-content-description {
+  padding-right: 136px;
+}
+
+.home-projects .home-content-description p {
+  color: var(--base);
+}
+
+.home-projects h3 {
+  padding-top: 192px;
+  opacity: 0.7;
+  font-size: 40px;
+  font-weight: 200;
+  color: var(--base);
+}
+
+.home-projects h4 {
+  opacity: 0.16;
+  font-size: 24px;
+  font-weight: 200;
+  font-variant: small-caps;
+  color: var(--base);
+}
+
+.home-projects ul {
+  list-style-type: none;
+  margin: 0;
+  width: 568px;
+  padding-top: 128px;
+  padding-left: 128px;
+}
+
+.home-projects li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 276px;
+  height: 144px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  background: #f7f8f8;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: background 0.2s linear;
+}
+
+.home-projects li:hover {
+  background: #e3e5e6;
+  cursor: pointer;
+}
+
+.home-projects li:nth-child(even) {
+  margin-right: 0;
+}
+
+.home-projects li p {
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 20px;
+  color: var(--base);
+  opacity: 0.8;
+}
+
+.home-projects li:hover p {
+  opacity: 1;
+}
+
+.home-projects .home-project-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.home-projects .home-project-description {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.home-projects li:hover .home-project-description {
+  opacity: 0.5;
+}
+
+.home-projects .home-project-meta {
+  position: absolute;
+  bottom: 16px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.home-projects .home-project-meta .icon {
+  padding-right: 2px;
+}
+
+.home-projects .home-project-meta .icon-fork {
+  padding-left: 10px;
+  padding-right: 4px;
+}
+
+.home-projects .home-project-meta .icon svg {
+  position: absolute;
+  top: 2px;
 }

@@ -19,6 +19,7 @@
     "object-assign": "^4.1.0",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
+    "react-icon-svg-symbol": "0.0.5",
     "toml-js": "0.0.8"
   },
   "devDependencies": {

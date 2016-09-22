@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "react-router"
 import { prefixLink } from "gatsby-helpers"
+import ReactIconSVGSymbol from 'react-icon-svg-symbol'
 
 export default class Index extends React.Component {
   render () {
@@ -38,6 +39,75 @@ export default class Index extends React.Component {
                 <li className="home-meetup-hangzhou" onClick={this.handleExternalRedirect("http://www.bagevent.com/event/191766")}>
                   <p>杭州</p>
                   <time>2016-10-15</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="home-content home-projects">
+          <div className="container home-projects-container">
+            <div className="home-content-description">
+              <h3>开源项目</h3>
+              <h4>Golang Projects</h4>
+              <p>优秀的 Go 开源项目。</p>
+            </div>
+            <div className="home-projects-list">
+              <ul>
+                <li className="home-project" onClick={this.handleExternalRedirect("http://open-falcon.org/")}>
+                  <p className="home-project-title">Open-Falcon</p>
+                  <p className="home-project-description">人性化的互联网企业级监控系统.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>623</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>178</span>
+                  </p>
+                </li>
+                <li className="home-project" onClick={this.handleExternalRedirect("http://beego.me/")}>
+                  <p className="home-project-title">Beego</p>
+                  <p className="home-project-description">A high-performance web framework.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>8184</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>2024</span>
+                  </p>
+                </li>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/flike/kingshard")}>
+                  <p className="home-project-title">kingshard</p>
+                  <p className="home-project-description">A high-performance MySQL proxy.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>2065</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>415</span>
+                  </p>
+                </li>
+                <li className="home-project">
+                  <p className="home-project-title">goim</p>
+                  <p className="home-project-description">A lightweight im server.</p>
+                  <p className="home-project-meta">
+                    <span className="icon icon-star">
+                      <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>1119</span>
+                    <span className="icon icon-fork">
+                      <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
+                    </span>
+                    <span>399</span>
+                  </p>
                 </li>
               </ul>
             </div>

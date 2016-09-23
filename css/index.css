@@ -1,3 +1,10 @@
+@import "../node_modules/normalize.css/normalize.css";
+@import "./global.css";
+@import "./markdown.css";
+@import "./color.css";
+@import "./icon.css";
+@import "./home.css";
+
 html, body {
   height: 100%;
 }

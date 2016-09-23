@@ -3,8 +3,7 @@ import Helmet from "react-helmet"
 import { Link } from "react-router"
 import { prefixLink } from "gatsby-helpers"
 import { config } from "config"
-import "../css/global"
-import "../css/markdown-styles"
+import "../css/index"
 
 module.exports = React.createClass({
   propTypes () {

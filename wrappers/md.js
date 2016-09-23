@@ -1,5 +1,4 @@
 import React from "react"
-import "css/markdown-styles.css"
 import Helmet from "react-helmet"
 import { config } from "config"
 

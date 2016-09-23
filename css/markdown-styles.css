@@ -1,3 +1,63 @@
+@import "./color.css";
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown p,
+.markdown li {
+  color: var(--base);
+  font-weight: 400;
+}
+
+.markdown h1 {
+  margin-top: 48px;
+  margin-bottom: 64px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.markdown h2 {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+.markdown h3 {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+.markdown h4 {
+  margin-top: 16px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.markdown ul {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.markdown p,
+.markdown li {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+.markdown em {
+  font-weight: 600;
+  opacity: 1;
+  font-style: normal;
+}
+
 .warning {
   color: #9F6000;
   background-color: #FEEFB3;

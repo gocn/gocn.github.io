@@ -69,7 +69,7 @@ export default class Index extends React.Component {
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/pingcap/tidb")}>
                   <p className="home-project-title">tidb</p>
-                  <p className="home-project-description">A distributed NewSQL database compatible with MySQL protocol.</p>
+                  <p className="home-project-description">A distributed NewSQL database.</p>
                   <p className="home-project-meta">
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />

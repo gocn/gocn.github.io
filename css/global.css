@@ -24,6 +24,10 @@ body {
   min-height: 100%;
 }
 
+.container.markdown {
+  max-width: 744px;
+}
+
 .app-header {
   width: 100%;
   height: 90px;
@@ -114,6 +118,8 @@ body {
   font-size: 32px;
   font-weight: 400;
   margin-top: 0;
+  color: white;
+  opacity: 0.6;
 }
 
 .home-hero-section-text {
@@ -150,7 +156,10 @@ body {
   background-color: #2f3f47;
 }
 
-.home-meetups h3, h4, p, li {
+.home-meetups h3,
+.home-meetups h4,
+.home-meetups p,
+.home-meetups li {
   color: white;
 }
 

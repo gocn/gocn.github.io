@@ -27,6 +27,7 @@
   margin-top: 0;
   color: white;
   opacity: 0.6;
+  padding: 0 64px;
 }
 
 .home-hero-section-text {
@@ -89,6 +90,11 @@
   justify-content: space-between;
 }
 
+.home-content-description {
+  display: flex;
+  flex-direction: column;
+}
+
 .home-content-description p {
   margin-top: 64px;
   font-size: 16px;
@@ -133,6 +139,8 @@
   border-radius: 8px;
   z-index: 40;
   transition: opacity 0.2s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-meetups-gallery li:after {
@@ -247,7 +255,7 @@
 .home-projects ul {
   list-style-type: none;
   margin: 0;
-  width: 860px;
+  width: 800px;
   padding-top: 128px;
   padding-left: 32px;
 }
@@ -323,4 +331,121 @@
 .home-projects .home-project-meta .icon svg {
   position: absolute;
   top: 2px;
+}
+
+@media (max-width: 1140px) {
+  .home-content {
+    height: auto;
+  }
+
+  .home-content-description {
+    flex-direction: row;
+  }
+
+  .home-content-description p {
+    margin-top: 128px;
+    margin-left: 64px;
+    border-left: 1px solid var(--base-light-shadow);
+    line-height: 72px;
+    padding-left: 32px;
+  }
+
+  .home-meetups-container {
+    flex-direction: column;
+  }
+
+  .home-meetups h3 {
+    padding-top: 128px;
+  }
+
+  .home-meetups .home-meetups-gallery {
+    padding-top: 64px;
+    padding-bottom: 128px;
+  }
+
+  .home-meetups .home-meetups-gallery ul {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .home-projects-container {
+    flex-direction: column;
+  }
+
+  .home-projects .home-content-description {
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  .home-projects .home-projects-list {
+    padding-bottom: 128px;
+  }
+
+  .home-projects h3 {
+    padding-top: 128px;
+  }
+
+  .home-projects ul {
+    width: auto;
+    padding-top: 64px;
+  }
+
+  .home-projects li:nth-child(3n+0) {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .home-projects ul {
+    padding-right: 32px;
+  }
+
+  .home-projects li {
+    width: calc(50% - 16px);
+  }
+
+  .home-projects li:nth-child(2n+0) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-meetups-gallery ul {
+    flex-wrap: wrap;
+  }
+
+  .home-meetups-gallery li {
+    margin-bottom: 16px;
+    width: calc(50% - 16px);
+  }
+
+  .home-projects li {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .home-hero-section-content {
+    top: 280px;
+  }
+
+  .home-meetups-gallery li {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .home-content-description {
+    flex-direction: column;
+  }
+
+  .home-content-description p {
+    margin-top: 0;
+    margin-left: 0;
+    border-left: none;
+    line-height: 72px;
+    padding-left: 0;
+  }
+
 }

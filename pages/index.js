@@ -18,8 +18,10 @@ export default class Index extends React.Component {
         <div className="home-content home-meetups">
           <div className="container home-meetups-container">
             <div className="home-content-description">
-              <h3>近期活动</h3>
-              <h4>Golang Meetups</h4>
+              <div className="home-content-title">
+                <h3>近期活动</h3>
+                <h4>Golang Meetups</h4>
+              </div>
               <p>Go 语言线下活动。</p>
             </div>
             <div className="home-meetups-gallery">
@@ -47,8 +49,10 @@ export default class Index extends React.Component {
         <div className="home-content home-projects">
           <div className="container home-projects-container">
             <div className="home-content-description">
-              <h3>开源项目</h3>
-              <h4>Golang Projects</h4>
+              <div className="home-content-title">
+                <h3>开源项目</h3>
+                <h4>Golang Projects</h4>
+              </div>
               <p>优秀的 Go 开源项目。</p>
             </div>
             <div className="home-projects-list">

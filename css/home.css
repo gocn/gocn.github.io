@@ -462,6 +462,14 @@
   .home-sponsors .home-sponsor {
     justify-content: flex-start;
   }
+
+  .home-sponsors .home-content-description {
+    padding-left: 32px;
+  }
+
+  .home-sponsors .home-sponsors-list ul {
+    padding: 0 32px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -561,5 +569,13 @@
   .home-sponsors .home-sponsor {
     width: 50%;
     justify-content: center;
+  }
+
+  .home-sponsors .home-content-description {
+    padding-left: 0;
+  }
+
+  .home-sponsors .home-sponsors-list ul {
+    padding: 0;
   }
 }

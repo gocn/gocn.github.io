@@ -333,6 +333,63 @@
   top: 2px;
 }
 
+.home-sponsors {
+  background-color: #414f57;
+}
+
+.home-sponsors h3 {
+  padding-top: 128px;
+  opacity: 0.7;
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+}
+
+.home-sponsors h4 {
+  opacity: 0.3;
+  font-size: 22px;
+  font-weight: 200;
+  font-variant: small-caps;
+  text-align: center;
+  color: white;
+}
+
+.home-sponsors .home-sponsors-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 128px;
+}
+
+.home-sponsors .home-sponsors-list ul {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.home-sponsors .home-sponsor {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.home-sponsors .home-sponsor:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.home-sponsors .home-sponsor img {
+  width: 80%;
+}
+
+
 @media (max-width: 1140px) {
   .home-content {
     height: auto;
@@ -347,7 +404,7 @@
     margin-left: 64px;
     border-left: 1px solid var(--base-light-shadow);
     line-height: 72px;
-    padding-left: 32px;
+    padding-left: 64px;
   }
 
   .home-meetups-container {
@@ -392,6 +449,18 @@
 
   .home-projects li:nth-child(3n+0) {
     margin-right: 16px;
+  }
+
+  .home-sponsors h4 {
+    text-align: left;
+  }
+
+  .home-sponsors .home-sponsors-list {
+    padding-bottom: 128px;
+  }
+
+  .home-sponsors .home-sponsor {
+    justify-content: flex-start;
   }
 }
 
@@ -439,6 +508,12 @@
     top: 280px;
   }
 
+  .home-meetups h3,
+  .home-meetups h4,
+  .home-meetups p {
+    text-align: center;
+  }
+
   .home-meetups .home-content-description {
     padding-left: 0;
   }
@@ -463,6 +538,11 @@
     border-left: none;
     line-height: 72px;
     padding-left: 0;
+    text-align: center;
+  }
+
+  .home-projects .home-content-title {
+    text-align: center;
   }
 
   .home-projects .home-content-description {
@@ -472,5 +552,14 @@
   .home-projects ul {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .home-sponsors h4 {
+    text-align: center;
+  }
+
+  .home-sponsors .home-sponsor {
+    width: 50%;
+    justify-content: center;
   }
 }

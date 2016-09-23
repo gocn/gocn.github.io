@@ -145,6 +145,32 @@ export default class Index extends React.Component {
             </div>
           </div>
         </div>
+        <div className="home-content home-sponsors">
+          <div className="container home-sponsors-container">
+            <div className="home-content-description">
+              <div className="home-content-title">
+                <h3>赞助企业</h3>
+                <h4>Sponsors</h4>
+              </div>
+            </div>
+            <div className="home-sponsors-list">
+              <ul>
+                <li className="home-sponsor" onClick={this.handleExternalRedirect("http://www.hebzs.com/")}>
+                  <img src="/images/pingcap.png" />
+                </li>
+                <li className="home-sponsor" onClick={this.handleExternalRedirect("https://www.daocloud.io/")}>
+                  <img src="/images/daocloud.png" />
+                </li>
+                <li className="home-sponsor" onClick={this.handleExternalRedirect("http://www.primeton.com/")}>
+                  <img src="/images/primeton.png" />
+                </li>
+                <li className="home-sponsor" onClick={this.handleExternalRedirect("http://www.qiniu.com/")}>
+                  <img src="/images/qiniu.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

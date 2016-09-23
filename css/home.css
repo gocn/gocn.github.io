@@ -439,6 +439,15 @@
     top: 280px;
   }
 
+  .home-meetups .home-content-description {
+    padding-left: 0;
+  }
+
+  .home-meetups .home-meetups-gallery ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .home-meetups-gallery li {
     margin-right: 0;
     width: 100%;
@@ -456,4 +465,12 @@
     padding-left: 0;
   }
 
+  .home-projects .home-content-description {
+    padding-left: 0;
+  }
+
+  .home-projects ul {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

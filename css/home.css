@@ -411,6 +411,10 @@
 }
 
 @media (max-width: 768px) {
+  .home-hero-section-slogan {
+    font-size: 28px;
+  }
+
   .home-meetups-gallery ul {
     flex-wrap: wrap;
   }
@@ -427,6 +431,10 @@
 }
 
 @media (max-width: 540px) {
+  .home-hero-section-slogan {
+    font-size: 20px;
+  }
+
   .home-hero-section-content {
     top: 280px;
   }

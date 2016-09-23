@@ -9,7 +9,7 @@ export default class Index extends React.Component {
       <div className="home">
         <div className="home-hero-section">
           <div className="home-hero-section-content">
-            <h2 className="home-hero-section-slogan">企业、高校、社区、开源，构建互动的 Go 生态链</h2>
+            <h2 className="home-hero-section-slogan">企业 · 高校 · 社区 · 开源，构建互动的 Go 生态链。</h2>
             <p className="home-hero-section-text">
               <Link to={prefixLink("/about/")}>了解更多 &raquo;</Link>
             </p>

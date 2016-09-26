@@ -26,7 +26,8 @@
   font-weight: 400;
   margin-top: 0;
   color: white;
-  opacity: 0.6;
+  opacity: 1;
+  letter-spacing: -0.6px;
   padding: 0 64px;
 }
 

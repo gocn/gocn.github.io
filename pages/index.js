@@ -1,10 +1,72 @@
 import React from "react"
 import { Link } from "react-router"
+import "whatwg-fetch"
+import { Promise } from "es6-promise"
 import { prefixLink } from "gatsby-helpers"
 import ReactIconSVGSymbol from 'react-icon-svg-symbol'
 
 export default class Index extends React.Component {
+   constructor(props) {
+    super(props);
+
+    this.state = {
+      repos: {
+        beego: {
+          id: "astaxie/beego"
+        },
+        tidb: {
+          id: "pingcap/tidb"
+        },
+        kingshard: {
+          id: "flike/kingshard"
+        },
+        bat: {
+          id: "astaxie/bat"
+        },
+        goim: {
+          id: "Terry-Mao/goim"
+        },
+        open_falcon: {
+          id: "open-falcon/of-release"
+        }
+      }
+    };
+  }
+
+  componentDidMount() {
+    const { repos } = this.state;
+    const repoArr = Object.keys(repos);
+
+    Promise.all(repoArr.map(
+      (repo) => (
+        fetch(`https://api.github.com/repos/${repos[repo].id}`)
+        .then((response) => (response.json()))
+      )
+    ))
+    .then((results) => {
+      const updatedRepos = {
+        ...repos
+      };
+      results.map((res, index) => {
+        let { stargazers_count, forks_count } = res;
+        let repo = repoArr[index];
+        updatedRepos[repo] = {
+          ...repos[repo],
+          stargazers_count,
+          forks_count
+        };
+      });
+      this.setState({
+        repos: {
+          ...updatedRepos
+        }
+      })
+    })
+    .catch((error) => console.log(error));
+  }
+
   render () {
+    const { repos } = this.state || {};
     return (
       <div className="home">
         <div className="home-hero-section">
@@ -64,11 +126,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>8184</span>
+                    <span>{repos.beego.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>2024</span>
+                    <span>{repos.beego.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/pingcap/tidb")}>
@@ -78,11 +140,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>4713</span>
+                    <span>{repos.tidb.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>597</span>
+                    <span>{repos.tidb.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/flike/kingshard")}>
@@ -92,11 +154,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>2065</span>
+                    <span>{repos.kingshard.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>415</span>
+                    <span>{repos.kingshard.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/astaxie/bat")}>
@@ -106,11 +168,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>1371</span>
+                    <span>{repos.bat.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>127</span>
+                    <span>{repos.bat.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/Terry-Mao/goim")}>
@@ -120,11 +182,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>1119</span>
+                    <span>{repos.goim.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>399</span>
+                    <span>{repos.goim.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/open-falcon/of-release")}>
@@ -134,11 +196,11 @@ export default class Index extends React.Component {
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>623</span>
+                    <span>{repos.open_falcon.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>178</span>
+                    <span>{repos.open_falcon.forks_count || "A lot"}</span>
                   </p>
                 </li>
               </ul>

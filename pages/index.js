@@ -149,8 +149,8 @@ export default class Index extends React.Component {
           <div className="container home-sponsors-container">
             <div className="home-content-description">
               <div className="home-content-title">
-                <h3>赞助企业</h3>
-                <h4>Sponsors</h4>
+                <h3>企业会员</h3>
+                <h4>Enterprise Members</h4>
               </div>
             </div>
             <div className="home-sponsors-list">

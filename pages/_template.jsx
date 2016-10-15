@@ -30,6 +30,12 @@ module.exports = React.createClass({
               <Link to={prefixLink("/")}>Golang Foundation</Link>
             </h1>
             <nav>
+              <a
+                href="https://gocn.io/"
+                target="_blank"
+              >
+                社区
+              </a>
               <Link
                 className={(pathname === "/about/") ? "active" : ""}
                 to={prefixLink("/about/")}

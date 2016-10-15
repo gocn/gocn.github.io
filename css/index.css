@@ -95,3 +95,13 @@ body {
   opacity: 0.7;
 }
 
+
+@media (max-width: 540px) {
+  .app-header h1 {
+    font-size: 20px;
+  }
+
+  .app-header nav a {
+    margin-left: 20px;
+  }
+}

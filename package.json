@@ -1,10 +1,11 @@
 {
   "name": "golang-foundation-web",
   "description": "Website of Golang Foundation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "rc. <ryaneof@gmail.com>",
   "dependencies": {
     "es6-promise": "^3.3.1",
+    "fontmin": "^0.9.6",
     "front-matter": "^2.0.7",
     "gatsby": "^0.12.6",
     "highlight.js": "^9.6.0",
@@ -21,6 +22,7 @@
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.1.0",
     "react-icon-svg-symbol": "0.0.5",
+    "source-han-sans-sc-ttf": "^1.0.0",
     "toml-js": "0.0.8",
     "whatwg-fetch": "^1.0.0"
   },
@@ -34,10 +36,10 @@
   "main": "n/a",
   "scripts": {
     "clean": "rm -rf public/",
-    "build": "npm run clean && gatsby build",
+    "build": "npm run clean && gatsby build && sh ./build.sh",
     "serve": "gatsby serve-build",
-    "deploy": "npm run clean && gatsby build && gh-pages -b master -d public",
-    "dev": "gatsby develop",
+    "deploy": "npm run build && gh-pages -b master -d public",
+    "dev": "gatsby build && sh ./build.sh && gatsby develop",
     "test": "echo \"No test specified\" && exit 0"
   }
 }

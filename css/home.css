@@ -76,7 +76,7 @@
   padding-top: 204px;
   opacity: 0.7;
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .home-meetups h4 {
@@ -203,7 +203,7 @@
   position: absolute;
   top: 208px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   opacity: 0.7;
   padding-left: 16px;
   z-index: 60;
@@ -241,7 +241,7 @@
   padding-top: 192px;
   opacity: 0.7;
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 400;
   color: var(--base);
 }
 
@@ -342,7 +342,7 @@
   padding-top: 128px;
   opacity: 0.7;
   font-size: 40px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: center;
   color: white;
 }

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Source Han Sans SC";
+  src: url("/fonts/SourceHanSansSC-Light.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Source Han Sans SC";
+  src: url("/fonts/SourceHanSansSC-Normal.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Source Han Sans SC";
+  src: url("/fonts/SourceHanSansSC-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Source Han Sans SC";
+  src: url("/fonts/SourceHanSansSC-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+

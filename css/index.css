@@ -1,5 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import "./global.css";
+@import "./font.css";
 @import "./markdown.css";
 @import "./color.css";
 @import "./icon.css";
@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Microsoft Yahei, STHeiti, Helvetica Neue, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Source Han Sans SC", "Microsoft Yahei", STHeiti, "Helvetica Neue", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,7 +41,7 @@ body {
   float: left;
   margin: 32px 0 32px 0;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .app-header nav {
@@ -54,6 +54,7 @@ body {
   color: white;
   text-decoration: none;
   transition: opacity 0.15s linear;
+  font-weight: 500;
 }
 
 .app-header a:hover {

@@ -100,4 +100,4 @@ title: 关于 Golang Foundation
 
 #### 义务
 
-- 每年赞助费 50,000 RMB
+- 赞助费 50,000 RMB

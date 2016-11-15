@@ -20,8 +20,8 @@ export default class Index extends React.Component {
         kingshard: {
           id: "flike/kingshard"
         },
-        bat: {
-          id: "astaxie/bat"
+        harbor: {
+          id: "vmware/harbor"
         },
         goim: {
           id: "Terry-Mao/goim"
@@ -161,18 +161,18 @@ export default class Index extends React.Component {
                     <span>{repos.kingshard.forks_count || "A lot"}</span>
                   </p>
                 </li>
-                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/astaxie/bat")}>
-                  <p className="home-project-title">bat</p>
-                  <p className="home-project-description">Go implement CLI, cURL-like tool for humans.</p>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/vmware/harbor")}>
+                  <p className="home-project-title">harbor</p>
+                  <p className="home-project-description">An enterprise-class container registry server based on Docker Distribution.</p>
                   <p className="home-project-meta">
                     <span className="icon icon-star">
                       <ReactIconSVGSymbol symbolId="icon-star" fileURL="/images/icons.svg" />
                     </span>
-                    <span>{repos.bat.stargazers_count || "A lot"}</span>
+                    <span>{repos.harbor.stargazers_count || "A lot"}</span>
                     <span className="icon icon-fork">
                       <ReactIconSVGSymbol symbolId="icon-fork" fileURL="/images/icons.svg" />
                     </span>
-                    <span>{repos.bat.forks_count || "A lot"}</span>
+                    <span>{repos.harbor.forks_count || "A lot"}</span>
                   </p>
                 </li>
                 <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/Terry-Mao/goim")}>

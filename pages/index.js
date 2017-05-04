@@ -27,7 +27,7 @@ export default class Index extends React.Component {
           id: "Terry-Mao/goim"
         },
         open_falcon: {
-          id: "open-falcon/of-release"
+          id: "open-falcon/falcon-plus"
         }
       }
     };
@@ -189,7 +189,7 @@ export default class Index extends React.Component {
                     <span>{repos.goim.forks_count || "A lot"}</span>
                   </p>
                 </li>
-                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/open-falcon/of-release")}>
+                <li className="home-project" onClick={this.handleExternalRedirect("https://github.com/open-falcon/falcon-plus")}>
                   <p className="home-project-title">Open-Falcon</p>
                   <p className="home-project-description">人性化的互联网企业级监控系统.</p>
                   <p className="home-project-meta">

@@ -31,7 +31,7 @@ module.exports = React.createClass({
             </h1>
             <nav>
               <a
-                href="https://gocn.io/"
+                href="https://gocn.vip/"
                 target="_blank"
               >
                 社区
